@@ -37,49 +37,11 @@ const Review = (props) => {
           >
             {job}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textSecondary" component="p" className={classes.description}>
             {text}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions className={classes.cardActionsStyle}>
-        <div style={{ marginBottom: "10px" }}>
-          <Button
-            size="small"
-            color="primary"
-            onClick={() => {
-              console.log("current id ", props.id);
-              if (props.id === 0) {
-                return props.showReview(3);
-              } else {
-                return props.showReview(props.id - 1);
-              }
-            }}
-          >
-            {"<"}
-          </Button>
-          <Button
-            size="small"
-            color="primary"
-            onClick={() => {
-              if (props.id === 3) {
-                return props.showReview(0);
-              } else {
-                return props.showReview(props.id + 1);
-              }
-            }}
-          >
-            {">"}
-          </Button>
-        </div>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => props.randomPerson()}
-        >
-          Surprise me
-        </Button>
-      </CardActions>
     </Card>
   );
 };

@@ -14,5 +14,12 @@ export default makeStyles((theme) => ({
   heading: {
     margin: 0,
   },
-  arrow: { background: "#e1e1e1", cursor: "pointer" },
+  arrow: {
+    background: "#617d98",
+    cursor: "pointer",
+    color: "white",
+    '&:hover': {
+      background: "#ba5d2c",
+   },
+  },
 }));

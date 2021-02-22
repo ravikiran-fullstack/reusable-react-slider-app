@@ -12,11 +12,11 @@ const App = () => {
   return (
     <>
       <Grid container>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={8}>
+        <Grid item xs={3}></Grid>
+        <Grid item xs={6}>
           <Slider data={data} />
         </Grid>
-        <Grid item xs={2}></Grid>
+        <Grid item xs={3}></Grid>
       </Grid>
     </>
   );
