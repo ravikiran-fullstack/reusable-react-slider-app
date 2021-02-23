@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
     boxShadow: "none",
   },
   media: {
-    height: "150px",
+    height: "250px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
