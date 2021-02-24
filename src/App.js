@@ -20,6 +20,15 @@ const App = () => {
           <ImageSlider slides={ sliderImages }/>
         </Grid>  
       </Grid> */}
+      <Grid
+        container
+        alignItems="center"
+        justify="center"
+      >
+        <Grid item>
+          <h1 className={classes.heading}>/Reviews</h1>
+        </Grid>
+      </Grid>
       <Grid container> 
         <Grid item xs={3}></Grid>
         <Grid item xs={6}>

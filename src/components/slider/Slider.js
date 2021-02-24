@@ -22,15 +22,7 @@ const Slider = ({ data }) => {
 
   return (
     <div className={classes.root}>
-      <Grid
-        container
-        alignItems="center"
-        justify="center"
-      >
-        <Grid item>
-          <h1 className={classes.heading}>/Reviews</h1>
-        </Grid>
-      </Grid>
+      
       <Grid container alignItems="center" justify="center">
         <Grid item xs={1} style={{ textAlign: "center" }}>
           <Button className={`${classes.arrow} ${classes.leftArrow}`} onClick={() => prevReview()}>
